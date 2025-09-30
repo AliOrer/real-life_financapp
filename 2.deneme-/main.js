@@ -17,8 +17,8 @@ async function loadCoins() {
       
       coinSelect.appendChild(option);
     });
-    catch(error) {
-      priceEl.innerText = "Coin listesi yüklenemedi!! " + error.message;
+   }      catch(error) {
+      priceEl.innerText = "Coin listesi yuklenemedi!! " + error.message;
     }
   }
   
@@ -36,9 +36,9 @@ async function loadCoins() {
         else{
           priceEl.innerText ="fiyat alinamadi!!";
         }
-        catch (error) {
+       } catch (error) {
           priceEl.innerText ="hata: " + error.message;
         }
     }
-  }
-}loadCoins();
+
+loadCoins();
