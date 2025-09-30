@@ -13,7 +13,7 @@ async function loadCoins() {
     coins.slice(0, 300).forEach(coin => {
       const option = document.createElement("option");
       option.value = coin.id;
-      option.textContent = `$ {coin.name} ($ {coin.symbol.toUpperCase()})`;
+      option.textContent = `${coin.name} ( ${coin.symbol.toUpperCase()})`;
       
       coinSelect.appendChild(option);
     });
@@ -31,7 +31,7 @@ async function loadCoins() {
       
       
       if(data[coin]){
-        priceEl.innerText = ` {coin.toUpperCase()} fiyatı:  ${data[coin], usd} USD`;
+        priceEl.innerText = ` ${coin.toUpperCase()} fiyatı:  ${data[coin].usd} USD`;
       }
         else{
           priceEl.innerText ="fiyat alinamadi!!";
