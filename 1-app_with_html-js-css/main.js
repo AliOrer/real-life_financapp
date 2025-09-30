@@ -11,3 +11,4 @@ async function getPrice() {
 }
 
 getPrice();
+setInterval(getPrice, 5000);
