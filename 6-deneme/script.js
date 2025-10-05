@@ -11,7 +11,7 @@ async function loadBinanceCoins(){
   
   
 //btc/usdt gibi 2. eklentileri kaldır  
-  allCoins = [...new Set(data.map(c => c.symbol.replace(/(USDT | BUST | FDUSD | USDC)$/, ""))
+  allCoins = [...new Set(data.map(c => c.symbol.replace(/(USDT | BUSD | FDUSD | USDC)$/, ""))
   .filter(sym => sym.length < 10))].sort();
   
   renderCoins(allCoins);
@@ -19,8 +19,7 @@ async function loadBinanceCoins(){
 
 //listeyi ekrana yaz
 function renderCoins(coins){
-  coinList.innerHTML = coins.map(sym => 
-  `<li onclick ="getPrice('${sym}')">${sym}</li>`).join("");
+  coinList.innerHTML = coins.map(sym => `<li onclick ="getPrice('${sym}')">${sym}</li>`).join("");
 }
 
 
@@ -44,7 +43,7 @@ async function getPrice(symbol) {
     
     if(data.price){
       const price = parseFloat(data.price).toLocaleString("en-US", {style: "currency", currency: "USD"});
-      priceDiv.textContent = `${symbol} fiyati : ${price} ;`
+      priceDiv.textContent = `${symbol} fiyati : ${price} `;
     }
     else{
       priceDiv.textContent = `${symbol} icin fiyat bulunamadi!` ;
