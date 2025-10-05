@@ -17,7 +17,7 @@ async function loadBinanceCoins(){
 
 //listeyi ekrana yaz
 function renderCoins(coins){
-  coinList.innerHTML = coins.map(sym => `<li onclick ="getPrice('${sym}')">${sym}</li>`).join("");
+  coinList.innerHTML = coins.map(sym => `<li onclick ="selectCoin('${sym}')">${sym}</li>`).join("");
 }
 
 
