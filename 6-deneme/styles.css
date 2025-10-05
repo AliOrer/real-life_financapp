@@ -39,3 +39,23 @@ ul{
   width: 280px;
   box-shadow: 0 0 15px rgba(0,0,0,0.3);
 }
+
+
+li{
+  padding: 10px;
+  border-bottom: 1px solid #334155;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+li:hover   {
+  background: #334155;
+}
+
+.price{
+  margin-top: 25px;
+  font-size: 22px;
+  background: #1e293b;
+  padding: 15px 25px;
+  border-radius: 10px;
+}
