@@ -70,7 +70,7 @@ setInterval(() => {
   if(currentSymbol){
     getPrice(currentSymbol);
   }
-}, 5000);
+}, 5000/2);  //dahaaaaaa hizli refresh
 
 
 
