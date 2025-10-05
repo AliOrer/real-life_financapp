@@ -1,0 +1,1 @@
+bir önceki sürümde ux bakımından hatalı olan, istediğimiz coini bulduğumuzda dropdown liste asılı kalıyordu, şimdiki sürümle bunu ortadan kaldırmak için canlı filtreleme ekledim, artık liste kapanıyor, input alan seçilen coinle doluyor ve fiyat anında gösteriliyor.
