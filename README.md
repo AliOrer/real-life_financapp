@@ -5,4 +5,6 @@
 
    her 2,5 saniyede fiyat güncellemesi alan bir uygulama. 
 
+   sade bir arayüz uygulama kullanımını kolaylaştırıyor 
+
    >>uygulamanın arayüzü geliştirilecek.
