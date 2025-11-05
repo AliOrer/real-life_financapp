@@ -45,7 +45,7 @@ searchInput.addEventListener("input", () => {
 
 //fiyat çek binancetan
 async function getPrice(symbol) {
-  priceDiv.textContent = "yukleniyor...";
+  priceDiv.textContent = "loading...";
   try {
     
     const res = await fetch(`https://api.binance.com/api/v3/ticker/price?symbol=${symbol}USDT`);
@@ -53,14 +53,14 @@ async function getPrice(symbol) {
     
     if(data.price){
       const price = parseFloat(data.price).toLocaleString("en-US", {style: "currency", currency: "USD"});
-      priceDiv.textContent = `${symbol} fiyati : ${price} `;
+      priceDiv.textContent = `${symbol} : ${price} `;
     }
     else{
-      priceDiv.textContent = `${symbol} icin fiyat bulunamadi!` ;
+      priceDiv.textContent = `${symbol} didn't find the price!` ;
     }
   }
     catch (err) {
-      priceDiv.textContent = "bir hata olustu: " + err.message;
+      priceDiv.textContent = "an error occured: " + err.message;
     }
   }
 loadBinanceCoins();
