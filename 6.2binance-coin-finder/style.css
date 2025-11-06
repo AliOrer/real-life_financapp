@@ -1,4 +1,3 @@
-
 html, body{
   overflow: hidden;
 }
@@ -16,6 +15,12 @@ body{
   margin: 0;
 }
 
+/*scroll bar gözükmez ama daha zarif bi kaydırma için*/
+/*
+body::-webkit-scrollbar {
+  display: none;
+}
+  */
 
 
 h1{
@@ -52,7 +57,7 @@ ul{
   list-style: none  ;
   padding: 0;
   max-height: 250px;
-  overflow: auto;
+  overflow: auto !important;
   background: #1e293b;
   border-radius: 10px;
   width: 280px;
