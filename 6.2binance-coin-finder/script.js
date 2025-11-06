@@ -73,6 +73,7 @@ setInterval(() => {
 }, 5000/2);  //dahaaaaaa hizli refresh
 
 
+console.log("%cCreated by Ali Örer", "color: #00bcd4; font-size: 14px; font-weight: bold;");
 
 
 
