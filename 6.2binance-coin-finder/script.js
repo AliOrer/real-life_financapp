@@ -43,6 +43,7 @@ searchInput.addEventListener("input", () => {
     return;
   }
   
+  
   const filtered = allCoins.filter(c => c.includes(term));
   renderCoins(filtered);
 });
