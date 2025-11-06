@@ -59,7 +59,7 @@ input:focus{
 ul{
   list-style: none  ;
   padding: 0;
-  max-height: 200px;
+  max-height: 258px;
   overflow: auto !important;
   background: #1a1f27;
   border-radius: 8px;
