@@ -1,5 +1,7 @@
 
-
+html, body{
+  overflow: hidden;
+}
 
 body{
   font-family: 'Poppins', Sans-Serif;
