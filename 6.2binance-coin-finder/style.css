@@ -1,6 +1,24 @@
 html, body{
-  overflow: auto;
+  overflow-y: auto;
+  scrollbar-width: none;
+  scrollbar-color: rgba(255,255,255,0.1) transparent;
 }
+body::-webkit-scrollbar-track {
+  background: #0e1117; /* sayfa arka planı */
+}
+
+
+
+body::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.15); /* soft görünüm */
+  border-radius: 12px;
+  transition: background 0.3s ease;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: rgba(255,255,255,0.25);
+}
+
 
 body{
   font-family: 'Segoe UI', Tahoma, sans-serif;
@@ -41,7 +59,7 @@ h1{
 
 
 input{
-  width: 300px;
+  width: 330px;
   padding: 10px 14px;
   font-size: 16px;
   border-radius: 8px;
@@ -101,9 +119,11 @@ ul{
   margin-top: 20px;
   font-size: 18px;
   background: #1e293b;
-  padding: 15px 25px;
+  padding: 12px 15px;
   border-radius: 10px;
   text-align: center;
+  width:330px;
+  box-sizing: border-box;
 }
 
 
@@ -140,3 +160,28 @@ ul{
 }
 
 
+/* Masaüstü: scrollbar gizli */
+@media (min-width: 1025px) {
+  html, body {
+    overflow: hidden; /* scroll tamamen kapalı veya gizli */
+  }
+  body::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* Tablet / Mobil: scroll bar aktif */
+@media (max-width: 1024px) {
+  html, body {
+    overflow-y: auto; /* scroll aktif */
+  }
+}
+
+/* responsive: ekran 480px veya altına gelince */
+@media (max-width: 480px) {
+  #price {
+    width: 90%; /* input ve ul ile aynı */
+    font-size: 16px;
+    padding: 10px 12px;
+  }
+}
