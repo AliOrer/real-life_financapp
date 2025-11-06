@@ -32,19 +32,19 @@ function selectCoin(symbol){
 
 
 
-//aramayı filtrele  ""sadece ilk 30 optionla sınırla""
+//seacrh bar
 searchInput.addEventListener("input", () => {
   const term = searchInput.value.toUpperCase();
 
   if(term === ""){
-    renderCoins(allCoins.slice(0,30));
+    renderCoins(allCoins);
     priceDiv.textContent = "Select Coin";
     currentSymbol = null;
     return;
   }
   
   const filtered = allCoins.filter(c => c.includes(term));
-  renderCoins(filtered.slice(0, 30));
+  renderCoins(filtered);
 });
 
 
