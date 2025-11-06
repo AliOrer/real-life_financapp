@@ -45,7 +45,7 @@ searchInput.addEventListener("input", () => {
 
 //fiyat çek binancetan
 async function getPrice(symbol) {
-  priceDiv.textContent = "loading...";
+  //priceDiv.textContent = "loading...";
   try {
     
     const res = await fetch(`https://api.binance.com/api/v3/ticker/price?symbol=${symbol}USDT`);
