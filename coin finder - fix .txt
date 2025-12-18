@@ -1,0 +1,7 @@
+  -- scroll barı gizle
+  -- seçim, search bara yeniden basılınca gizlensin
+
+  --https://www.google.com/search?q=sanayilerde+kullan%C4%B1lan+yaz%C4%B1l%C4%B1m&oq=sanayilerde+kullan%C4%B1lan+yaz%C4%B1l%C4%B1m&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDQzMTlqMGoxqAIAsAIA&sourceid=chrome&ie=UTF-8
+
+
+--FİYATLAR TAM GÖZÜKSÜN
